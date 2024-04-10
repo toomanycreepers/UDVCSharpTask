@@ -32,6 +32,12 @@ internal sealed class InMemoryStore : IStore
             Id = 3,
             Manufacturer = "ГАЗ",
             Model = "ГАЗель"
+        },
+        new()
+        {
+            Id =4,
+            Manufacturer = "Benz",
+            Model = "Patent-Motorwagen"
         }
     };
 
@@ -54,6 +60,12 @@ internal sealed class InMemoryStore : IStore
             Id = 3,
             Name = "Сидоров",
             Age = 56
+        },
+        new()
+        {
+            Id = 4,
+            Name = "Бенц",
+            Age = 41
         }
     };
     
@@ -90,6 +102,14 @@ internal sealed class InMemoryStore : IStore
             PersonId = 3,
             StartDateTime = new DateTime(2024, 3, 11, 14, 0, 0),
             EndDateTime = new DateTime(2024, 3, 11, 18, 2, 0)
+        },
+        new()
+        {
+            Id = 5,
+            CarId = 4,
+            PersonId = 4,
+            StartDateTime = new DateTime(1886, 01, 29),
+            EndDateTime = new DateTime(1886, 01, 30)
         }
     };
 }
